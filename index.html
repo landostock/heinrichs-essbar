@@ -1,16 +1,36 @@
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 
+<!-- Header -->
+<header class="bg-gray-800 py-8">
+  <div class="container mx-auto">
+    <h1 class="text-4xl font-bold text-white">Cafeteria Products</h1>
+  </div>
+</header>
 
-<div class="max-w-sm rounded overflow-hidden shadow-lg">
-  <img class="w-full" src="https://via.placeholder.com/300x200" alt="Cafeteria menu">
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">Cafeteria Menu</div>
-    <ul>
-      <li class="text-gray-700 text-base py-2">Monday: Sloppy Joes</li>
-      <li class="text-gray-700 text-base py-2">Tuesday: Tacos</li>
-      <li class="text-gray-700 text-base py-2">Wednesday: Chicken Alfredo</li>
-      <li class="text-gray-700 text-base py-2">Thursday: Spaghetti</li>
-      <li class="text-gray-700 text-base py-2">Friday: Pizza</li>
-    </ul>
+<!-- Product List -->
+<div class="container mx-auto py-8">
+  <div class="grid grid-cols-3 gap-4">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <img class="w-32 h-32 mx-auto mb-4" src="https://via.placeholder.com/150x150" alt="Product image">
+      <h2 class="text-2xl font-bold mb-2">Product 1</h2>
+      <p class="text-gray-700 mb-4">Description of product 1</p>
+      <div class="flex items-center justify-between">
+        <div class="text-3xl font-bold text-red-500">$10.00</div>
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <!-- Repeat for additional products -->
   </div>
 </div>
+
+<!-- Payment Options -->
+<footer class="bg-gray-900 py-8">
+  <div class="container mx-auto flex items-center justify-between">
+    <div class="text-white text-sm">
+      Payment options: PayPal, Credit Card, or In Person
+    </div>
+    <img src="https://via.placeholder.com/100x50" alt="Payment logos">
+  </div>
+</footer>
