@@ -1,5 +1,4 @@
 # heinrichs-essbar
-Menü von Heinrichs-Essbar an der Johann-Heinrich-Voss Schule.
-Hallo und Willkommen auf unserer Website, wir sind zwei junge Progrmmierer und Coden diese Seite für unsere Schule
-Ich hoffe sie gefällt ihnen. Danke für´s lesen
-Tschüss
+Hallo, wilkommen auf unserer Redame.md Datei.
+Wir sind zwei Schüler die bei der Voss-Schule aktiv sind.
+Wir haben diese Website gemacht damit es einfacher werden soll Essen bei unserer Essbar zu bestellen und die Wartezeiten zu verkürzen.
