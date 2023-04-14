@@ -5,78 +5,84 @@
   <div class="container mx-auto flex justify-between items-center">
     <h1 class="text-xl font-medium">Heinrichs-Essbar Website (Inofficial)</h1>
   </div>
-</header><!DOCTYPE html>
+</header>
+<!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      .menu {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-      }
 
-      .menu a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-      }
+<head>
+  <style>
+    .menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-      .menu a:hover {
-        color: #f1f1f1;
-      }
+    .menu a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
 
-      .menu .close {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
+    .menu a:hover {
+      color: #f1f1f1;
+    }
 
-      .open-menu {
-        width: 250px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="mySidenav" class="menu">
-      <a href="#" class="close" onclick="closeNav()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">Produktliste</a>
-      <a href="#">Warenkorb</a>
-    </div>
+    .menu .close {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
 
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
+    .open-menu {
+      width: 250px;
+    }
+  </style>
+</head>
 
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").classList.add("open-menu");
-      }
+<body>
+  <div id="mySidenav" class="menu">
+    <a href="#" class="close" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Produktliste</a>
+    <a href="#">Warenkorb</a>
+  </div>
 
-      function closeNav() {
-        document.getElementById("mySidenav").classList.remove("open-menu");
-      }
-    </script>
-  </body>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menü</span>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").classList.add("open-menu");
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").classList.remove("open-menu");
+    }
+  </script>
+</body>
+
 </html>
 
 
 
-    <!-- Product List -->
+<!-- Product List -->
 <div class="container mx-auto py-8">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
     <div class="bg-white rounded-lg shadow-lg p-6">
-      <img class="w-36 h-32 mx-auto mb-4" src="https://de.rc-cdn.community.thermomix.com/recipeimage/vrnj027p-2331c-245381-cfcd2-db7x45lg/e6df5e01-8513-4b31-9cb9-a107be4e7b58/main/pizzatasche-mit-blaetterteig.jpg" alt="Product image">
+      <img class="w-36 h-32 mx-auto mb-4"
+        src="https://de.rc-cdn.community.thermomix.com/recipeimage/vrnj027p-2331c-245381-cfcd2-db7x45lg/e6df5e01-8513-4b31-9cb9-a107be4e7b58/main/pizzatasche-mit-blaetterteig.jpg"
+        alt="Product image">
       <h2 class="text-2xl font-bold mb-2">Pizzatasche</h2>
       <p class="text-gray-700 mb-4">mit Tomate und Käse</p>
       <div class="flex items-center justify-between">
@@ -87,36 +93,40 @@
       </div>
     </div>
     <div class="bg-white rounded-lg shadow-lg p-6">
-      <img class="w-36 h-32 mx-auto mb-4" src="https://www.schne-frost.de/__we_thumbs__/4028_22_6833-Kartoffel-Taschen-Frischkaese-Kraeuter-06900.jpg" alt="Product image">
+      <img class="w-36 h-32 mx-auto mb-4"
+        src="https://www.schne-frost.de/__we_thumbs__/4028_22_6833-Kartoffel-Taschen-Frischkaese-Kraeuter-06900.jpg"
+        alt="Product image">
       <h2 class="text-2xl font-bold mb-2">Kartoffeltaschen</h2>
       <p class="text-gray-700 mb-4">2 cremige Kartoffeltaschen</p>
       <div class="flex items-center justify-between">
         <div class="text-3xl font-bold text-red-500">1,00€</div>
         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-       Kaufen
+          Kaufen
         </button>
       </div>
     </div>
     <div class="bg-white rounded-lg shadow-lg p-6">
-      <img class="w-36 h-32 mx-auto mb-4" src="https://www.bestinfood.shop/media/image/product/10170/lg/mexikostange-35x-150g.jpg" alt="Product image">
+      <img class="w-36 h-32 mx-auto mb-4"
+        src="https://www.bestinfood.shop/media/image/product/10170/lg/mexikostange-35x-150g.jpg" alt="Product image">
       <h2 class="text-2xl font-bold mb-2">Mexiko-Stange</h2>
       <p class="text-gray-700 mb-4">würzig mexikanisch</p>
       <div class="flex items-center justify-between">
         <div class="text-3xl font-bold text-red-500">1,00€</div>
         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-        Kaufen
+          Kaufen
         </button>
       </div>
     </div>
     <div class="bg-white rounded-lg shadow-lg p-6">
       <div className="bg-white rounded-lg shadow-lg p-6">
-    </div><img class="w-36 h-32 mx-auto mb-4" src="https://img.chefkoch-cdn.de/rezepte/150681066371674/bilder/967288/crop-960x720/zigarren-kaese-boerek.jpg" alt="Product image">
+      </div><img class="w-36 h-32 mx-auto mb-4"
+        src="https://img.chefkoch-cdn.de/rezepte/150681066371674/bilder/967288/crop-960x720/zigarren-kaese-boerek.jpg"
+        alt="Product image">
       <h2 class="text-2xl font-bold mb-2">Börek</h2>
       <select
         className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-        value={variety}
-        onChange={e => setVariety(e.target.value)}
-      >
+        value={variety} onChange={e=> setVariety(e.target.value)}
+        >
         <option value="plain">mit Käse</option>
         <option value="pepperoni">mit Spinat</option>
         <option value="veggie">mit Kartoffel</option>
@@ -124,31 +134,32 @@
       <div class="flex items-center justify-between">
         <div class="text-3xl font-bold text-red-500">1,00€</div>
         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-        Kaufen
+          Kaufen
         </button>
       </div>
     </div>
     <div class="bg-white rounded-lg shadow-lg p-6">
       <div className="bg-white rounded-lg shadow-lg p-6">
-    </div><img class="w-40 h-32 mx-auto mb-4" src="https://www.partyservice-rohde.de/wp-content/uploads/2015/04/07_66_Halbe_belegte_Broetchen.jpg" alt="Product image">
+      </div><img class="w-40 h-32 mx-auto mb-4"
+        src="https://www.partyservice-rohde.de/wp-content/uploads/2015/04/07_66_Halbe_belegte_Broetchen.jpg"
+        alt="Product image">
       <h2 class="text-2xl font-bold mb-2">Brötchen</h2>
       <select
         className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-        value={variety}
-        onChange={e => setVariety(e.target.value)}
-      >
+        value={variety} onChange={e=> setVariety(e.target.value)}
+        >
         <option value="egg">mit Rührei</option>
         <option value="salami">mit Salami</option>
         <option value="cheese">mit Käse</option>
         <option value="tomato">Tomate-Mozzarella</option>
       </select>
       <div class="mt-4">
-      <div class="flex items-center justify-between">
-        <div class="text-3xl font-bold text-red-500">0,80€</div>
-        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
-        Kaufen
-        </button>
+        <div class="flex items-center justify-between">
+          <div class="text-3xl font-bold text-red-500">0,80€</div>
+          <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">
+            Kaufen
+          </button>
+        </div>
       </div>
+      <!-- Repeat for additional products -->
     </div>
-    <!-- Repeat for additional products -->
-  </div>
